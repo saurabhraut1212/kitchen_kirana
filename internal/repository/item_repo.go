@@ -20,7 +20,7 @@ func NewItemRepo(db *mongo.Database) *ItemRepo {
 	}
 }
 
-func (r *ItemRepo) create(ctx context.Context, it *models.Item) (*models.Item, error) {
+func (r *ItemRepo) Create(ctx context.Context, it *models.Item) (*models.Item, error) {
 	now := time.Now()
 	it.CreatedAt = now
 	it.LastUpdated = now
