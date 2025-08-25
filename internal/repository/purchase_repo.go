@@ -17,9 +17,9 @@ func NewPurchaseRepo(db *mongo.Database) *PurchaseRepo {
 }
 
 func (r *PurchaseRepo) Create(ctx context.Context, p *models.Purchase) (*models.Purchase, error) {
-	if p.Date.IsZero() {
-		p.Date = time.Now()
-	}
+	// if p.Date.IsZero() {
+	// 	p.Date = time.Now()
+	// }
 	p.CreatedAt = time.Now()
 	res, err := r.col.InsertOne(ctx, p)
 	if err != nil {
