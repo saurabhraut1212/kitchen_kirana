@@ -62,3 +62,6 @@ go run cmd/server/main.go
 ---
 ## Postman testing
 https://web.postman.co/workspace/My-Workspace~388302e8-5eb7-4c3f-821d-5523c39dad56/collection/26119400-bf00e9c2-c4ae-44d5-b968-3c634a5161d6?action=share&source=copy-link&creator=26119400
+
+## Deployed on AWS EC2
+http://13.232.251.220:8080/api/items
